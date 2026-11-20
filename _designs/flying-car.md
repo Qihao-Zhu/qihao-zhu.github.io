@@ -3,7 +3,7 @@ title: Land-Air Smart City Flying Car
 subtitle: A compact flying car that fits in a normal road lane
 year: 2022 – 2023
 order: 2
-role: Concept design, human-centered design research, prototyping
+role: Concept design, human-centered design
 tags: [Flying car, Mobility, Prototype]
 cover: /assets/img/designs/flying-car/cover.png
 summary: A land-air vehicle with foldable propeller guards so it can drive in a standard lane and take off from the road. A full-scale prototype was built and publicly demonstrated.
