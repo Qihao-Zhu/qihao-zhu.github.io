@@ -1,0 +1,12 @@
+{% assign cv_exists = site.static_files | where: "path", site.cv_pdf | size %}
+<header class="site-header">
+  <nav class="container nav">
+    <a class="brand" href="{{ '/' | relative_url }}">{{ site.author.short_name }}</a>
+    <ul class="nav-links">
+      <li><a href="{{ '/' | relative_url }}" {% if page.url == '/' %}class="active"{% endif %}>About</a></li>
+      <li><a href="{{ '/publications/' | relative_url }}" {% if page.url == '/publications/' %}class="active"{% endif %}>Publications</a></li>
+      <li><a href="{{ '/designs/' | relative_url }}" {% if page.url contains '/designs/' %}class="active"{% endif %}>Design Works</a></li>
+      {% if cv_exists > 0 %}<li><a href="{{ site.cv_pdf | relative_url }}" target="_blank" rel="noopener">CV</a></li>{% endif %}
+    </ul>
+  </nav>
+</header>

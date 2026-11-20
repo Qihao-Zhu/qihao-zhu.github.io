@@ -1,0 +1,50 @@
+# ---------------------------------------------------------------
+# Site settings. Edit the values; keep the structure.
+# ---------------------------------------------------------------
+title: Qihao Zhu
+description: Dr. Qihao Zhu, Postdoctoral Associate at MIT. Research on AI for human-centered design, artificial creativity, and industrial design.
+url: "https://qihao-zhu.github.io"   # change if your GitHub username is different
+baseurl: ""                           # leave empty for a <username>.github.io site
+
+author:
+  name: Dr. Qihao Zhu
+  short_name: Qihao Zhu
+  role: Postdoctoral Associate, Department of Mechanical Engineering
+  institution: Massachusetts Institute of Technology
+  email: qihaozhu@mit.edu
+  photo: /assets/img/profile.jpg
+  # Fill these in to show the links (leave empty to hide):
+  scholar: "https://scholar.google.com/citations?user=outi3v0AAAAJ"
+  linkedin: "https://www.linkedin.com/in/qihao-zhu/"
+  github: ""
+  orcid: ""
+
+# Your name as it appears in author lists; it is shown in bold.
+highlight_author: "Zhu, Q."
+
+# Files offered for download (paths relative to the site root).
+cv_pdf: /assets/pdf/Qihao_Zhu_CV.pdf
+
+# ---------------------------------------------------------------
+# Technical settings. You should not need to touch these.
+# ---------------------------------------------------------------
+collections:
+  designs:
+    output: true
+    permalink: /designs/:name/
+
+defaults:
+  - scope:
+      path: ""
+      type: designs
+    values:
+      layout: design
+
+markdown: kramdown
+exclude:
+  - README.md
+  - SETUP.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - node_modules

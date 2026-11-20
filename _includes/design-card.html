@@ -1,0 +1,10 @@
+{% comment %} Renders one design card; expects `work`. {% endcomment %}
+{% assign work = include.work %}
+<a class="card" href="{{ work.url | relative_url }}">
+  <div class="card-media"><img src="{{ work.cover | relative_url }}" alt="{{ work.title }}" loading="lazy"></div>
+  <div class="card-body">
+    <h3>{{ work.title }}</h3>
+    <p class="card-meta">{{ work.year }}</p>
+    {% if work.summary %}<p class="card-summary">{{ work.summary }}</p>{% endif %}
+  </div>
+</a>

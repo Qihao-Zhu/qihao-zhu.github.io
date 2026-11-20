@@ -1,0 +1,155 @@
+# =================================================================
+# PUBLICATIONS
+#
+# Each entry starts with "- type:". Entries appear on the site in
+# the order written here within each group, so put the newest first.
+#
+# type:    journal | conference   (which group it goes in)
+# authors: as you want them printed; "Zhu, Q." is bolded automatically
+# year:    4-digit year
+# title:   paper title
+# venue:   journal or conference name
+# details: volume(issue), pages, or conference location and dates (optional)
+# doi:     just the DOI, e.g. 10.1115/1.4067527 (optional)
+# url:     a link if there is no DOI (optional)
+# pdf:     path to a PDF in assets/pdf/, e.g. /assets/pdf/zhu2025.pdf (optional)
+# award:   e.g. Best Paper Award (optional)
+# figure:  path to an image shown below the citation, e.g. /assets/img/pubs/zhu2025.jpg (optional)
+# figure_caption: one sentence under that image (optional)
+# tags:    [Generative AI, Empathy]  topics, matching the research interests in
+#          profile.yml; used for filtering on the Publications page (optional)
+# selected: true   to show it on the home page (optional)
+#
+# Wrap a value in double quotes if it contains a colon (:) or starts
+# with a special character.
+# =================================================================
+
+# ---------- Journal papers ----------
+
+- type: journal
+  authors: "Zhu, Q., Chong, L., Yang, M.C., & Luo, J."
+  year: 2025
+  title: "Reading Users' Minds with LLM: Mental Inference for Artificial Empathy in Design"
+  venue: ASME Journal of Mechanical Design
+  details: 147(6)
+  doi: 10.1115/1.4067527
+  tags: [Empathy, Human-centered design, User needs, Generative AI]
+  selected: true
+
+- type: journal
+  authors: "Zhu, Q., & Luo, J."
+  year: 2024
+  title: Toward Artificial Empathy for Human-Centered Design
+  venue: ASME Journal of Mechanical Design
+  details: 146(6), 061401
+  doi: 10.1115/1.4064161
+  tags: [Empathy, Human-centered design, Artificial creativity]
+  selected: true
+
+- type: journal
+  authors: "Zhu, Q., Zhang, X., & Luo, J."
+  year: 2023
+  title: Biologically Inspired Design Concept Generation Using Generative Pre-Trained Transformers
+  venue: ASME Journal of Mechanical Design
+  details: 145(4), 041409
+  doi: 10.1115/1.4056598
+  tags: [Generative AI, Concept generation, Bio-inspired design]
+  selected: true
+
+- type: journal
+  authors: "Zhu, Q., & Luo, J."
+  year: 2023
+  title: Generative Transformers for Design Concept Generation
+  venue: ASME Journal of Computing and Information Science in Engineering
+  details: 23(4), 041003
+  doi: 10.1115/1.4056220
+  tags: [Generative AI, Concept generation, Artificial creativity]
+  award: Spotlight Paper
+  selected: true
+
+# ---------- Peer-reviewed conference papers ----------
+
+- type: conference
+  authors: "Chong, L., Zhu, Q., Schelhaas, B., Ng, G., & Yang, M.C."
+  year: 2025
+  title: Facilitating Identification of Ergonomic User Needs Through AI-assisted Observation
+  venue: ASME IDETC-CIE International Conference
+  details: Anaheim, CA, US, August 17-20, 2025
+  doi: 10.1115/DETC2025-168959
+  tags: [Human-centered design, User needs, Generative AI]
+
+- type: conference
+  authors: "Zhu, Q., & Luo, J."
+  year: 2025
+  title: "Artificial Creativity in Design: A Theory-Based Framework for Implementation"
+  venue: International Conference on Engineering Design (ICED25)
+  details: Dallas, TX, US, August 11-14, 2025
+  doi: 10.1017/pds.2025.10076
+  tags: [Artificial creativity, Human-AI collaboration, Concept generation]
+  award: Reviewers' Choice Award
+  selected: true
+
+- type: conference
+  authors: "Zhu, Q., Chong, L., Yang, M.C., & Luo, J."
+  year: 2024
+  title: "Reading Users' Minds from What They Say: An Investigation into LLM-based Empathic Mental Inference"
+  venue: ASME IDETC-CIE International Conference
+  details: Washington, DC, US, August 25-28, 2024
+  doi: 10.1115/DETC2024-143961
+  tags: [Empathy, Human-centered design, User needs, Generative AI]
+  award: Best Paper Award
+  selected: true
+
+- type: conference
+  authors: "Song, B., Zhu, Q., & Luo, J."
+  year: 2024
+  title: Human-AI Collaboration by Design
+  venue: International DESIGN Conference
+  details: Dubrovnik, Croatia, May 20-23, 2024
+  doi: 10.1017/pds.2024.227
+  tags: [Human-AI collaboration, Artificial creativity]
+
+- type: conference
+  authors: "Zhu, Q., & Luo, J."
+  year: 2023
+  title: "Toward Artificial Empathy for Human-Centered Design: A Framework"
+  venue: 49th ASME IDETC-CIE International Conference
+  details: Boston, MA, US, August 20-23, 2023
+  doi: 10.1115/DETC2023-117266
+  tags: [Empathy, Human-centered design]
+
+- type: conference
+  authors: "Deshpande, R., Patel, S. V., Weijenberg, C., Nisztuk, M., Corcuera, M., Luo, J., & Zhu, Q."
+  year: 2023
+  title: Generative Pre-Trained Transformers for 15-Minute City Design
+  venue: International Conference of the Association for Computer-Aided Architectural Design Research in Asia (CAADRIA)
+  details: Ahmedabad, India, March 18-24, 2023
+  url: https://papers.cumincad.org/data/works/att/caadria2023_305.pdf
+  tags: [Generative AI, Concept generation]
+
+- type: conference
+  authors: "Zhu, Q., & Luo, J."
+  year: 2022
+  title: Generative Pre-Trained Transformers for Biologically Inspired Design
+  venue: ASME IDETC-CIE International Conference
+  details: St. Louis, Missouri, US, August 14-17, 2022
+  doi: 10.1115/DETC2022-90366
+  tags: [Generative AI, Concept generation, Bio-inspired design]
+
+- type: conference
+  authors: "Zhu, Q., & Luo, J."
+  year: 2022
+  title: "Generative Design Ideation: A Natural Language Generation Approach"
+  venue: Conference on Design Computing and Cognition (DCC)
+  details: Glasgow, UK, July 4-6, 2022
+  doi: 10.1007/978-3-031-20418-0_3
+  tags: [Generative AI, Concept generation]
+
+- type: conference
+  authors: "Zhu, Q., & Luo, J."
+  year: 2022
+  title: "Generative Pre-Trained Transformer for Design Concept Generation: An Exploration"
+  venue: International DESIGN Conference
+  details: Cavtat, Croatia, May 23-26, 2022
+  doi: 10.1017/pds.2022.185
+  tags: [Generative AI, Concept generation]

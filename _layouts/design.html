@@ -1,0 +1,49 @@
+---
+layout: default
+---
+{% assign works = site.designs | sort: "order" %}
+{% for w in works %}{% if w.url == page.url %}{% assign idx = forloop.index0 %}{% endif %}{% endfor %}
+{% assign prev_idx = idx | minus: 1 %}{% assign next_idx = idx | plus: 1 %}
+
+<article class="design">
+  <p class="crumbs"><a href="{{ '/designs/' | relative_url }}">Design Works</a> / {{ page.title }}</p>
+  <h1>{{ page.title }}</h1>
+  {% if page.subtitle %}<p class="lead">{{ page.subtitle }}</p>{% endif %}
+
+  <dl class="meta">
+    {% if page.year %}<dt>Year</dt><dd>{{ page.year }}</dd>{% endif %}
+    {% if page.role %}<dt>My role</dt><dd>{{ page.role }}</dd>{% endif %}
+    {% if page.tags %}<dt>Tags</dt><dd>{% for t in page.tags %}<span class="tag">{{ t }}</span>{% endfor %}</dd>{% endif %}
+  </dl>
+
+  {% comment %} The body alternates pictures and paragraphs; pictures are written as
+  ![caption](/path/to/image.jpg) and turned into captioned figures below. {% endcomment %}
+  <div class="prose design-body">{{ content }}</div>
+
+  {% if page.related %}
+  <section class="related">
+    <h2>Related</h2>
+    <ul>
+      {% for r in page.related %}
+      <li>{% if r.url %}<a href="{{ r.url }}" target="_blank" rel="noopener">{{ r.text }}</a>{% else %}{{ r.text }}{% endif %}</li>
+      {% endfor %}
+    </ul>
+  </section>
+  {% endif %}
+
+  <nav class="pager">
+    {% if prev_idx >= 0 %}{% assign p = works[prev_idx] %}<a class="prev" href="{{ p.url | relative_url }}">← {{ p.title }}</a>{% else %}<span></span>{% endif %}
+    {% if next_idx < works.size %}{% assign n = works[next_idx] %}<a class="next" href="{{ n.url | relative_url }}">{{ n.title }} →</a>{% endif %}
+  </nav>
+</article>
+
+<script>
+  // Turn ![caption](image) lines into <figure> with a visible caption and a click-to-open link.
+  document.querySelectorAll('.design-body p > img:only-child').forEach(function (img) {
+    var p = img.parentNode, fig = document.createElement('figure');
+    var a = document.createElement('a'); a.href = img.src; a.target = '_blank'; a.rel = 'noopener';
+    a.appendChild(img.cloneNode()); fig.appendChild(a);
+    if (img.alt) { var c = document.createElement('figcaption'); c.textContent = img.alt; fig.appendChild(c); }
+    p.parentNode.replaceChild(fig, p);
+  });
+</script>

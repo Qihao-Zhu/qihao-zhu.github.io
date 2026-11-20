@@ -1,0 +1,27 @@
+{% comment %} Renders one publication entry; expects `pub`. {% endcomment %}
+{% assign pub = include.pub %}
+{% capture bold_author %}<strong>{{ site.highlight_author }}</strong>{% endcapture %}
+<li class="pub" data-tags="{{ pub.tags | join: "|" }}">
+  <div class="pub-title">
+    {% if pub.doi %}<a href="https://doi.org/{{ pub.doi }}" target="_blank" rel="noopener">{{ pub.title }}</a>
+    {% elsif pub.url %}<a href="{{ pub.url }}" target="_blank" rel="noopener">{{ pub.title }}</a>
+    {% else %}{{ pub.title }}{% endif %}
+    {% if pub.award %}<span class="badge"><svg class="ribbon" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><circle cx="8" cy="5.6" r="4.3" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M5.3 9.3 4.2 15 8 12.9 11.8 15l-1.1-5.7" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round"/></svg>{{ pub.award }}</span>{% endif %}
+  </div>
+  <div class="pub-authors">{{ pub.authors | replace: site.highlight_author, bold_author }} ({{ pub.year }})</div>
+  <div class="pub-venue">
+    {% if pub.venue %}<em>{{ pub.venue }}</em>{% endif %}{% if pub.details %}, {{ pub.details }}{% endif %}{% if pub.status %}{% if pub.venue %} · {% endif %}<span class="status">{{ pub.status }}</span>{% endif %}
+  </div>
+  <div class="pub-links">
+    {% if pub.doi %}<a href="https://doi.org/{{ pub.doi }}" target="_blank" rel="noopener">DOI</a>{% endif %}
+    {% if pub.url %}<a href="{{ pub.url }}" target="_blank" rel="noopener">Link</a>{% endif %}
+    {% if pub.pdf %}<a href="{{ pub.pdf | relative_url }}" target="_blank" rel="noopener">PDF</a>{% endif %}
+  </div>
+  {% if pub.tags %}<div class="pub-tags">{% for t in pub.tags %}<a href="{{ '/publications/' | relative_url }}?tag={{ t | url_encode }}" data-tag="{{ t }}">{{ t }}</a>{% endfor %}</div>{% endif %}
+  {% if pub.figure %}
+  <figure class="pub-figure">
+    <a href="{{ pub.figure | relative_url }}" target="_blank" rel="noopener"><img src="{{ pub.figure | relative_url }}" alt="{{ pub.figure_caption | default: pub.title | escape }}" loading="lazy"></a>
+    {% if pub.figure_caption %}<figcaption>{{ pub.figure_caption }}</figcaption>{% endif %}
+  </figure>
+  {% endif %}
+</li>

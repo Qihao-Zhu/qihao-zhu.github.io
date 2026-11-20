@@ -1,0 +1,14 @@
+{% comment %}
+Research-landscape figure: the original image with clickable areas laid over the
+two text blocks. The areas and their target tags are defined in _data/profile.yml
+under "figure: hotspots:" (positions are percentages of the image size).
+{% endcomment %}
+{% assign f = site.data.profile.figure %}
+<div class="landscape-map">
+  <img src="{{ f.src | relative_url }}" alt="{{ f.caption | strip_html | escape }}">
+  {% for h in f.hotspots %}
+  <a class="hotspot" href="{{ '/publications/' | relative_url }}?tag={{ h.tag | url_encode }}"
+     style="left:{{ h.left }}%;top:{{ h.top }}%;width:{{ h.width }}%;height:{{ h.height }}%"
+     title="See publications on {{ h.tag }}" aria-label="See publications on {{ h.tag }}"></a>
+  {% endfor %}
+</div>

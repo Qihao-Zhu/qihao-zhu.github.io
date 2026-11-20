@@ -1,0 +1,126 @@
+# =================================================================
+# HOME (ABOUT) PAGE CONTENT: bio, figure, interests, positions,
+# education, awards. Lists appear in the order written.
+#
+# In bio paragraphs you can use **bold** and *italic*.
+# To highlight a key term, wrap it like this:
+#   <strong class="key">your term</strong>
+# =================================================================
+
+bio: >-
+  Creative design depends on finding problems worth solving that people rarely
+  articulate, and on imagining solutions beyond familiar features. My research develops
+  <strong class="key">human-centered artificial creativity (AC)</strong>: AI that helps
+  designers comprehend and integrate knowledge at scale, from user experiences to
+  engineering principles, and translate it into creative possibilities. Bridging AI,
+  cognitive psychology, and design, I develop and evaluate AI-native methods for ideation
+  and empathic inference within a theory-based framework for artificial creativity, with
+  outputs that designers can interpret, assess, and develop further.
+
+# bio_more can hold several paragraphs: separate them with a blank line.
+bio_more: |-
+  My work expands the design space along two axes. In solution exploration, I pioneered
+  generative language-model approaches that transfer knowledge from distant domains into
+  design concepts, including design by analogy and biologically inspired design, starting
+  before the release of ChatGPT. In problem exploration, I initiated a research strand on
+  artificial empathy: language-model methods that infer users' underlying goals and
+  psychological needs, performing comparably to human designers on benchmark inference
+  tasks. A theory-based AC framework unifies the two so that problems and solutions
+  co-evolve, and I am extending it into cooperative multi-agent models of competing design
+  objectives and stakeholder perspectives.
+
+  As a Postdoctoral Associate at MIT working with Prof. Maria C. Yang, I am scaling these
+  foundations toward closed-loop design: vision-language models that infer needs from
+  observed user behavior, multi-agent simulations that search for win-win interventions
+  between personal convenience and sustainability, and conversational CAD that turns
+  everyday requests into print-ready designs. Trained as an industrial designer, I also
+  design and prototype physical products, from flying cars to wearable robotics. I received
+  my PhD in Engineering Design from the Singapore University of Technology and Design under
+  Prof. Jianxi Luo.
+
+# Figure shown beside the opening paragraph. Replace the image file to update it
+# (a PNG export from PowerPoint at 1200 px wide or more looks sharpest).
+# "hotspots" are clickable areas laid over the image: each opens the Publications
+# page filtered by "tag". Positions are percentages of the image width/height,
+# measured from the top-left corner, so they stay in place at any display size.
+figure:
+  src: /assets/img/research-landscape.png
+  hotspots:
+    - tag: Concept generation          # over "Solution Exploration / Cross-domain knowledge transfer"
+      left: 7
+      top: 12
+      width: 29
+      height: 28
+    - tag: Human-centered design       # over "Problem Exploration / Empathic understanding"
+      left: 45
+      top: 63
+      width: 31
+      height: 27
+  caption: >-
+    AC-supported design space expansion through problem and solution exploration. AC
+    broadens solutions by transferring knowledge from distant domains and deepens problem
+    understanding by moving from expressed to latent needs. Click "Solution Exploration"
+    or "Problem Exploration" to see the related publications.
+
+# Research interests are shown as clickable tags; clicking one opens the
+# Publications page filtered to papers carrying the same tag (see the
+# "tags:" line of each entry in publications.yml). Keep them short.
+interests:
+  - Generative AI
+  - Concept generation
+  - Artificial creativity
+  - Empathy
+  - Human-centered design
+  - User needs
+  - Human-AI collaboration
+  - Bio-inspired design
+
+positions:
+  - period: 2025 – present
+    title: Postdoctoral Associate, Mechanical Engineering
+    institution: Massachusetts Institute of Technology, Cambridge, US
+    note: "Advisor: Prof. Maria C. Yang"
+  - period: 2025
+    title: Postdoctoral Research Fellow, Systems Engineering
+    institution: City University of Hong Kong, Hong Kong SAR
+    note: "Advisor: Prof. Jianxi Luo"
+  - period: 2023 – 2024
+    title: Visiting PhD Student, Mechanical Engineering
+    institution: Massachusetts Institute of Technology, Cambridge, US
+    note: "Advisor: Prof. Maria C. Yang"
+  # - period: 2019 – 2020
+  #   title: Product Manager
+  #   institution: Shenzhen Accompany Tech (Xiaomi-invested), China
+
+education:
+  - period: 2020 – 2025
+    title: PhD in Engineering Design
+    institution: Singapore University of Technology and Design
+    note: "Thesis: Artificial Creativity in Design: Generative AI Enabled Ideation and Empathy"
+  - period: 2016 – 2019
+    title: Master in Industrial Design
+    institution: Sichuan University, China
+    note: "Thesis: Kansei Engineering Method for Lower-Limb Robotic Exoskeleton Design"
+  - period: 2012 – 2016
+    title: Bachelor in Industrial Design
+    institution: Sichuan University, China
+
+awards:
+  - year: 2025
+    title: Reviewers' Choice Award
+    detail: Design Society ICED25
+  - year: 2024
+    title: Best Paper Award
+    detail: ASME IDETC-CIE 2024, Design Theory and Methodology Track
+    url: https://www.asme-dtm.org/awards
+  - year: 2024
+    title: Hackathon 1st Place
+    detail: HackDisability – AI for Accessibility, MIT CSAIL
+    url: https://cap.csail.mit.edu/hackdisability-ai-accessibility-event-summary
+  - year: 2023
+    title: Spotlight Paper
+    detail: ASME Journal of Computing and Information Science in Engineering
+    url: https://asmejcise.org/2023/06/23/july-2023-spotlight-generative-transformers-for-design-concept-generation/
+  - year: 2020 – 2025
+    title: PhD Fellowship
+    detail: Singapore University of Technology and Design

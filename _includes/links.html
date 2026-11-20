@@ -1,0 +1,9 @@
+<ul class="links">
+  <li><a href="mailto:{{ site.author.email }}">Email</a></li>
+  {% if site.author.scholar != "" %}<li><a href="{{ site.author.scholar }}" target="_blank" rel="noopener">Google Scholar</a></li>{% endif %}
+  {% if site.author.linkedin != "" %}<li><a href="{{ site.author.linkedin }}" target="_blank" rel="noopener">LinkedIn</a></li>{% endif %}
+  {% if site.author.github != "" %}<li><a href="{{ site.author.github }}" target="_blank" rel="noopener">GitHub</a></li>{% endif %}
+  {% if site.author.orcid != "" %}<li><a href="{{ site.author.orcid }}" target="_blank" rel="noopener">ORCID</a></li>{% endif %}
+  {% assign cv_exists = site.static_files | where: "path", site.cv_pdf | size %}
+  {% if cv_exists > 0 %}<li><a href="{{ site.cv_pdf | relative_url }}" target="_blank" rel="noopener">CV (PDF)</a></li>{% endif %}
+</ul>
