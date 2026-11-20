@@ -19,24 +19,11 @@ bio: >-
 
 # bio_more can hold several paragraphs: separate them with a blank line.
 bio_more: |-
-  My work expands the design space along two axes. In solution exploration, I pioneered
-  generative language-model approaches that transfer knowledge from distant domains into
-  design concepts, including design by analogy and biologically inspired design, starting
-  before the release of ChatGPT. In problem exploration, I initiated a research strand on
-  artificial empathy: language-model methods that infer users' underlying goals and
-  psychological needs, performing comparably to human designers on benchmark inference
-  tasks. A theory-based AC framework unifies the two so that problems and solutions
-  co-evolve, and I am extending it into cooperative multi-agent models of competing design
-  objectives and stakeholder perspectives.
-
-  As a Postdoctoral Associate at MIT working with Prof. Maria C. Yang, I am scaling these
-  foundations toward closed-loop design: vision-language models that infer needs from
-  observed user behavior, multi-agent simulations that search for win-win interventions
-  between personal convenience and sustainability, and conversational CAD that turns
-  everyday requests into print-ready designs. Trained as an industrial designer, I also
-  design and prototype physical products, from flying cars to wearable robotics. I received
-  my PhD in Engineering Design from the Singapore University of Technology and Design under
-  Prof. Jianxi Luo.
+  My work expands the design space along two axes: transferring knowledge from distant
+  domains to explore solutions, and inferring users' latent needs through artificial
+  empathy to explore problems. A theory-based AC framework unifies the two so that
+  problems and solutions co-evolve, and I am now extending it toward closed-loop,
+  human-AI co-design.
 
 # Figure shown beside the opening paragraph. Replace the image file to update it
 # (a PNG export from PowerPoint at 1200 px wide or more looks sharpest).
