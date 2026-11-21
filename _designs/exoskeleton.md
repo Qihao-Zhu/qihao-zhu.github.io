@@ -6,7 +6,7 @@ order: 4
 role: Ergonomic research, industrial design, Kansei Engineering methodology, prototyping
 tags: [Wearable robotics, Ergonomics, Kansei Engineering]
 cover: /assets/img/designs/exoskeleton/cover.png
-summary: Ergonomic and aesthetic design of a load-carrying exoskeleton, showcased at the World Robot Conference 2018. The aesthetic design process was the case study of my master's thesis on Kansei Engineering.
+summary: Ergonomic and aesthetic design of a load-carrying exoskeleton. The aesthetic design process was the case study of my master's thesis on Kansei Engineering.
 related:
   - text: "Zhu, Q. (2019). Kansei Engineering Method for Lower-Limb Robotic Exoskeleton Design. Master's thesis."
 ---
@@ -17,7 +17,7 @@ A load-carrying lower-limb exoskeleton for walking with heavy backpacks. The des
 
 ![Joint degrees of freedom, adjustable struts, ergonomic interfaces, and wearing steps, with the ergonomic prototype.](/assets/img/designs/exoskeleton/02.jpg)
 
-The ergonomic work defined active hip joints (3 degrees of freedom), active knee joints (1 degree of freedom), and passive ankle joints (3 degrees of freedom), adjustable thigh and shank struts, and the body interfaces: shoulder straps and backpack, waist pad and backboard, lower thigh cuffs, and foot plates with straps. A wearable ergonomic prototype was built to test the wearing sequence and fit.
+The ergonomic work involved active hip joints, active knee joints, and passive ankle joints, adjustable thigh and shank struts, and the body interfaces: shoulder straps and backpack, waist pad and backboard, lower thigh cuffs, and foot plates with straps. A wearable ergonomic prototype was built to test the wearing sequence and fit.
 
 <!-- ![Kansei elements synthesized across design iterations, and sketches.](/assets/img/designs/exoskeleton/03.jpg)
 
