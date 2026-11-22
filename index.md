@@ -36,7 +36,7 @@ permalink: /
     <h2>Positions</h2>
     <ul class="timeline">
       {% for e in p.positions %}
-      <li><span class="when">{{ e.period }}</span><span class="what"><strong>{{ e.title }}</strong><br>{{ e.institution }}{% if e.note %}<br><small>{{ e.note }}</small>{% endif %}</span></li>
+      <li><span class="when">{{ e.period }}</span><span class="what"><strong>{{ e.title }}</strong>{% if e.unit %}<br>{{ e.unit }}{% endif %}<br>{{ e.institution }}{% if e.note %}<br><small>{{ e.note }}</small>{% endif %}</span></li>
       {% endfor %}
     </ul>
   </section>
@@ -44,7 +44,7 @@ permalink: /
     <h2>Education</h2>
     <ul class="timeline">
       {% for e in p.education %}
-      <li><span class="when">{{ e.period }}</span><span class="what"><strong>{{ e.title }}</strong><br>{{ e.institution }}{% if e.note %}<br><small>{{ e.note }}</small>{% endif %}</span></li>
+      <li><span class="when">{{ e.period }}</span><span class="what"><strong>{{ e.title }}</strong>{% if e.unit %}<br>{{ e.unit }}{% endif %}<br>{{ e.institution }}{% if e.note %}<br><small>{{ e.note }}</small>{% endif %}</span></li>
       {% endfor %}
     </ul>
   </section>
